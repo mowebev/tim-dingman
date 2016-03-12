@@ -1,0 +1,9 @@
+.default {
+  height: 60px;
+  line-height: 60px;
+  background: map-get($colors, black);
+  font-family: map-get(map-get($fonts, families), sans-serif);
+  font-size: map-get(map-get($fonts, sizes), small);
+  color: map-get($colors, white);
+  padding: 0 20px 0 20px;
+}
