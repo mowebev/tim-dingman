@@ -21,9 +21,11 @@ class Thumbnail extends Component {
         className={className}
         style={props.style}
       >
-        <a style={{
-          backgroundImage: `url(${props.img})`,
-        }} />
+        <a
+          style={{
+            backgroundImage: `url(${props.img})`,
+          }}
+        />
       </thumbnail>
     );
   }

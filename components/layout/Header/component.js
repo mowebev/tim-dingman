@@ -3,9 +3,6 @@ import { Component } from 'react';
 import { PropTypes } from 'react';
 import classnames from 'classnames';
 
-import Columns from 'components/flexbox/Columns';
-import Column from 'components/flexbox/Column';
-
 import styles from './styles.scss';
 
 
