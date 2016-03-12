@@ -1,3 +1,3 @@
-# Tim Dingman #
+# Timothy Fischer #
 
-The creative works of Tim Dingman.
+The creative works of Timothy Fischer.
