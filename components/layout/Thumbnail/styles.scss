@@ -1,24 +1,41 @@
 .default {
   background-color: #333;
-  min-width: 12rem;
-  min-height: 8rem;
+  min-width: 17%;
+  max-width: 99%;
+  min-height: calc(66% - 100px);
+  max-height: calc(99% - 100px);
   position: relative;
   flex: 1;
-  flex-basis: 8rem;
-  margin-right: 2px;
-  margin-bottom: 2px;
+  flex-basis: 17%;
+  margin: 9%;
+  cursor: pointer;
+
+  &:first-child {
+    margin-top: calc(17% - 40px);
+    margin-bottom: 17%;
+    flex-basis: calc(99% - 17%);
+    min-width: calc(99% - 17%);
+    min-height: calc(66% - 17% - 100px);
+    max-height: calc(99% - 17% - 100px);
+  }
 
   &:nth-child(5n) {
-    flex-basis: 14rem;
+    flex-basis: 17%;
   }
 
   &:nth-child(2n+1) {
-    flex-basis: 10rem;
+    flex-basis: 9%;
   }
 
   &:nth-child(7n+4) {
-    flex-basis: 20rem;
-    min-height: 12rem;
+    flex-basis: 66%;
+    min-height: calc(66% - 100px);
+  }
+
+  &:nth-child(7n) {
+    flex-basis: 99%;
+    min-width: 99%;
+    min-height: calc(99% - 100px);
   }
 
   a {

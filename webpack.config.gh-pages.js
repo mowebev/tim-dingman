@@ -64,6 +64,12 @@ module.exports = {
         path.join(__dirname, 'theme'),
       ],
     },{
+      test: /\.jpg$/,
+      loader: 'url!img?progressive=true',
+      include: [
+        path.join(__dirname, 'media'),
+      ],
+    },{
       test: /\.svg$/,
       loader: 'svg-sprite?name=[path]_[name]_[hash:base64:5]',
       include: [

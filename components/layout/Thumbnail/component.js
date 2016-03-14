@@ -23,7 +23,7 @@ class Thumbnail extends Component {
       >
         <a
           style={{
-            backgroundImage: `url(${props.img})`,
+            backgroundImage: `url(media/${props.img})`,
           }}
         />
       </thumbnail>
