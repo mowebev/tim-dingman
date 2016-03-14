@@ -14305,7 +14305,7 @@
 	        },
 	        _react2.default.createElement('a', {
 	          style: {
-	            backgroundImage: 'url(' + props.img + ')'
+	            backgroundImage: 'url(media/' + props.img + ')'
 	          }
 	        })
 	      );
