@@ -22,165 +22,13 @@ class App extends Component {
         <Header />
         <Main>
           <Navigation>
-            <NavigationLink name="Home" link="/" />
+            <NavigationLink name="Home" link="/home" />
             <NavigationLink name="Photography" link="/photography" />
             <NavigationLink name="Digital" link="/digital" />
             <NavigationLink name="Artwork" link="/artwork" />
             <NavigationLink name="About" link="/about" />
           </Navigation>
-          <Content>
-            <Gallery>
-              <Thumbnail
-                img="1.jpg"
-                size="large"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-
-              <Thumbnail
-                img="2.jpg"
-                size="small"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-              <Thumbnail
-                img="3.jpg"
-                size="small"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-              <Thumbnail
-                img="4.jpg"
-                size="medium"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-
-              <Thumbnail
-                img="3.jpg"
-                size="medium"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-              <Thumbnail
-                img="4.jpg"
-                size="medium"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-
-              <Thumbnail
-                img="2.jpg"
-                size="large"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-
-              <Thumbnail
-                img="1.jpg"
-                size="small"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-              <Thumbnail
-                img="2.jpg"
-                size="medium"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-              <Thumbnail
-                img="4.jpg"
-                size="small"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-
-              <Thumbnail
-                img="1.jpg"
-                size="large"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-
-              <Thumbnail
-                img="3.jpg"
-                size="medium"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-              <Thumbnail
-                img="4.jpg"
-                size="small"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-              <Thumbnail
-                img="1.jpg"
-                size="small"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-
-              <Thumbnail
-                img="3.jpg"
-                size="medium"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-              <Thumbnail
-                img="2.jpg"
-                size="medium"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-
-              <Thumbnail
-                img="1.jpg"
-                size="large"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-
-              <Thumbnail
-                img="4.jpg"
-                size="small"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-              <Thumbnail
-                img="2.jpg"
-                size="medium"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-              <Thumbnail
-                img="3.jpg"
-                size="small"
-                name="Name of Piece"
-                description="My description here..."
-                price="$99.99"
-              />
-            </Gallery>
-          </Content>
+          <Content>{props.content}</Content>
           <Aside>{props.aside}</Aside>
         </Main>
         <Footer />
@@ -190,7 +38,6 @@ class App extends Component {
 }
 
 App.propTypes = {
-  header: PropTypes.element,
   content: PropTypes.element,
   aside: PropTypes.element,
 };
