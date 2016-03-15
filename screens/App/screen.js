@@ -21,30 +21,35 @@ class App extends Component {
         <Main>
           <Content>
             <Gallery>
-              <Thumbnail img="1.jpg" />
-              <Thumbnail img="2.jpg" />
-              <Thumbnail img="3.jpg" />
-              <Thumbnail img="4.jpg" />
+              <Thumbnail img="1.jpg" size="large" />
 
-              <Thumbnail img="3.jpg" />
-              <Thumbnail img="4.jpg" />
-              <Thumbnail img="2.jpg" />
-              <Thumbnail img="1.jpg" />
+              <Thumbnail img="2.jpg" size="small" />
+              <Thumbnail img="3.jpg" size="small" />
+              <Thumbnail img="4.jpg" size="medium" />
 
-              <Thumbnail img="2.jpg" />
-              <Thumbnail img="4.jpg" />
-              <Thumbnail img="1.jpg" />
-              <Thumbnail img="3.jpg" />
+              <Thumbnail img="3.jpg" size="medium" />
+              <Thumbnail img="4.jpg" size="medium" />
 
-              <Thumbnail img="4.jpg" />
-              <Thumbnail img="1.jpg" />
-              <Thumbnail img="3.jpg" />
-              <Thumbnail img="2.jpg" />
+              <Thumbnail img="2.jpg" size="large" />
 
-              <Thumbnail img="1.jpg" />
-              <Thumbnail img="4.jpg" />
-              <Thumbnail img="2.jpg" />
-              <Thumbnail img="3.jpg" />
+              <Thumbnail img="1.jpg" size="small" />
+              <Thumbnail img="2.jpg" size="medium" />
+              <Thumbnail img="4.jpg" size="small" />
+
+              <Thumbnail img="1.jpg" size="large" />
+
+              <Thumbnail img="3.jpg" size="medium" />
+              <Thumbnail img="4.jpg" size="small" />
+              <Thumbnail img="1.jpg" size="small" />
+
+              <Thumbnail img="3.jpg" size="medium" />
+              <Thumbnail img="2.jpg" size="medium" />
+
+              <Thumbnail img="1.jpg" size="large" />
+
+              <Thumbnail img="4.jpg" size="small" />
+              <Thumbnail img="2.jpg" size="medium" />
+              <Thumbnail img="3.jpg" size="small" />
             </Gallery>
           </Content>
           <Aside>{props.aside}</Aside>

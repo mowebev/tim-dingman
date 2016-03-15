@@ -14,6 +14,7 @@ class Thumbnail extends Component {
     const props = this.props;
     const className = classnames(
       styles.default,
+      styles[props.size],
       props.className,
     );
     return (
@@ -42,10 +43,12 @@ Thumbnail.propTypes = {
   */
   style: PropTypes.object,
   img: PropTypes.string.isRequired,
+  size: PropTypes.string,
 };
 
 
 Thumbnail.defaultProps = {
+  size: 'large',
 };
 
 
