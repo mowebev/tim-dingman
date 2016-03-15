@@ -6,6 +6,48 @@
   font-size: 24px;
   color: #000000;
   padding: 0 20px 0 20px; }
+.components-layout-Navigation-default_1MQif {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-flex-basis: 226px;
+      -ms-flex-preferred-size: 226px;
+          flex-basis: 226px;
+  border-right: 1px solid #000000;
+  background: #C3C5C8;
+  padding: 20px 0; }
+.components-layout-NavigationLink-default_3cA8M {
+  cursor: pointer; }
+  .components-layout-NavigationLink-default_3cA8M a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #000000;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 0 0 20px; }
+    .components-layout-NavigationLink-default_3cA8M a.components-layout-NavigationLink-active_3YsKf {
+      color: #ffffff;
+      background-color: #000000;
+      box-shadow: -1px 0 1px rgba(0, 0, 0, 0.1) inset;
+      border-right: 10px solid #ffffff;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 2px; }
+      .components-layout-NavigationLink-default_3cA8M a.components-layout-NavigationLink-active_3YsKf:hover {
+        opacity: 1; }
+  .components-layout-NavigationLink-default_3cA8M:hover a, .components-layout-NavigationLink-default_3cA8M.components-layout-NavigationLink-hover_z7U2w a {
+    opacity: 0.50; }
 .components-layout-Main-default_2cMKL {
   display: -webkit-box;
   display: -webkit-flex;
@@ -167,9 +209,41 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
-  .components-layout-Thumbnail-default_uyX8t a:hover {
+  .components-layout-Thumbnail-default_uyX8t name, .components-layout-Thumbnail-default_uyX8t description, .components-layout-Thumbnail-default_uyX8t price {
+    display: none; }
+  .components-layout-Thumbnail-default_uyX8t:hover {
     opacity: 0.9;
     -webkit-transition: .2s ease-in;
     transition: .2s ease-in; }
+    .components-layout-Thumbnail-default_uyX8t:hover thumbnail-mask {
+      opacity: 0.7;
+      -webkit-transition: .2s ease-in;
+      transition: .2s ease-in;
+      position: absolute;
+      height: 33%;
+      bottom: 0;
+      background-color: black;
+      width: 100%; }
+    .components-layout-Thumbnail-default_uyX8t:hover name {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 10;
+      height: 23%;
+      color: white; }
+    .components-layout-Thumbnail-default_uyX8t:hover price {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 10;
+      height: 23%;
+      color: white; }
+    .components-layout-Thumbnail-default_uyX8t:hover description {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 10;
+      height: 17%;
+      color: white; }
 
 /*# sourceMappingURL=theme.css.map*/
