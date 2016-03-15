@@ -8,7 +8,7 @@ import Thumbnail from 'components/layout/Thumbnail';
 
 class Digital extends Component {
   render() {
-    const props = this.props;
+    // const props = this.props;
     return (
       <digital>
         <Gallery>

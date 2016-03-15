@@ -4,7 +4,7 @@ import { Component } from 'react';
 
 class About extends Component {
   render() {
-    const props = this.props;
+    // const props = this.props;
     return (
       <about
         style={{

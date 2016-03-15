@@ -8,7 +8,7 @@ import Thumbnail from 'components/layout/Thumbnail';
 
 class Artwork extends Component {
   render() {
-    const props = this.props;
+    // const props = this.props;
     return (
       <artwork>
         <Gallery>
