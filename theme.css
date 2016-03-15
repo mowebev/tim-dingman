@@ -40,7 +40,7 @@
       color: #ffffff;
       background-color: #000000;
       box-shadow: -1px 0 1px rgba(0, 0, 0, 0.1) inset;
-      border-right: 10px solid #ffffff;
+      border-left: 10px solid #ffffff;
       font-weight: 600;
       font-size: 14px;
       letter-spacing: 2px; }
