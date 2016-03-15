@@ -27,6 +27,10 @@ class Thumbnail extends Component {
             backgroundImage: `url(media/${props.img})`,
           }}
         />
+        <thumbnail-mask />
+        <name>{props.name}</name>
+        <price>{props.price}</price>
+        <description>{props.description}</description>
       </thumbnail>
     );
   }

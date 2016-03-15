@@ -19,17 +19,10 @@
       color: map-get($colors, white);
       background-color: map-get($colors, black);
       box-shadow: -1px 0 1px rgba(0, 0, 0, 0.1) inset;
-      & arrow {
-        display: block;
-        pointer-events: none;
-        position: relative;
-        bottom: 32px;
-        left: 1px;
-        border-top: 0.4375rem solid transparent;
-        border-right: 0.4375rem solid #fff;
-        border-left: none;
-        border-bottom: 0.4375rem solid transparent;
-      }
+      border-right: 10px solid map-get($colors, white);
+      font-weight: map-get(map-get($fonts, weights), bold);
+      font-size: map-get(map-get($fonts, sizes), small);
+      letter-spacing: 2px;
       &:hover {
         opacity: 1;
       }

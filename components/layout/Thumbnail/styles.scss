@@ -36,8 +36,46 @@
     background-repeat: no-repeat;
   }
 
-  a:hover {
+  name, description, price {
+    display: none;
+  }
+
+  &:hover {
     opacity: 0.9;
     transition: .2s ease-in;
+
+    thumbnail-mask {
+      opacity: 0.7;
+      transition: .2s ease-in;
+      position: absolute;
+      height: 33%;
+      bottom: 0;
+      background-color: black;
+      width: 100%;
+    }
+    name {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 10;
+      height: 23%;
+      color: white;
+    }
+    price {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 10;
+      height: 23%;
+      color: white;
+    }
+    description {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 10;
+      height: 17%;
+      color: white;
+    }
   }
 }

@@ -26,7 +26,6 @@ class NavigationLink extends Component {
           activeClassName={styles.active}
         >
           {props.name}
-          <arrow />
         </Link>
       </navigationlink>
     );
