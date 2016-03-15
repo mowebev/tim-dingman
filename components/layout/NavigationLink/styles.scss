@@ -19,7 +19,7 @@
       color: map-get($colors, white);
       background-color: map-get($colors, black);
       box-shadow: -1px 0 1px rgba(0, 0, 0, 0.1) inset;
-      border-right: 10px solid map-get($colors, white);
+      border-left: 10px solid map-get($colors, white);
       font-weight: map-get(map-get($fonts, weights), bold);
       font-size: map-get(map-get($fonts, sizes), small);
       letter-spacing: 2px;
