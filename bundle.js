@@ -14296,7 +14296,7 @@
 	    key: 'render',
 	    value: function render() {
 	      var props = this.props;
-	      var className = (0, _classnames2.default)(_styles2.default.default, props.className);
+	      var className = (0, _classnames2.default)(_styles2.default.default, _styles2.default[props.size], props.className);
 	      return _react2.default.createElement(
 	        'thumbnail',
 	        {
@@ -14324,10 +14324,13 @@
 	   * Add custom inline styles
 	  */
 	  style: _react.PropTypes.object,
-	  img: _react.PropTypes.string.isRequired
+	  img: _react.PropTypes.string.isRequired,
+	  size: _react.PropTypes.string
 	};
 	
-	Thumbnail.defaultProps = {};
+	Thumbnail.defaultProps = {
+	  size: 'large'
+	};
 	
 	exports.default = Thumbnail;
 
@@ -14450,26 +14453,26 @@
 	            _react2.default.createElement(
 	              _Gallery2.default,
 	              null,
-	              _react2.default.createElement(_Thumbnail2.default, { img: '1.jpg' }),
-	              _react2.default.createElement(_Thumbnail2.default, { img: '2.jpg' }),
-	              _react2.default.createElement(_Thumbnail2.default, { img: '3.jpg' }),
-	              _react2.default.createElement(_Thumbnail2.default, { img: '4.jpg' }),
-	              _react2.default.createElement(_Thumbnail2.default, { img: '3.jpg' }),
-	              _react2.default.createElement(_Thumbnail2.default, { img: '4.jpg' }),
-	              _react2.default.createElement(_Thumbnail2.default, { img: '2.jpg' }),
-	              _react2.default.createElement(_Thumbnail2.default, { img: '1.jpg' }),
-	              _react2.default.createElement(_Thumbnail2.default, { img: '2.jpg' }),
-	              _react2.default.createElement(_Thumbnail2.default, { img: '4.jpg' }),
-	              _react2.default.createElement(_Thumbnail2.default, { img: '1.jpg' }),
-	              _react2.default.createElement(_Thumbnail2.default, { img: '3.jpg' }),
-	              _react2.default.createElement(_Thumbnail2.default, { img: '4.jpg' }),
-	              _react2.default.createElement(_Thumbnail2.default, { img: '1.jpg' }),
-	              _react2.default.createElement(_Thumbnail2.default, { img: '3.jpg' }),
-	              _react2.default.createElement(_Thumbnail2.default, { img: '2.jpg' }),
-	              _react2.default.createElement(_Thumbnail2.default, { img: '1.jpg' }),
-	              _react2.default.createElement(_Thumbnail2.default, { img: '4.jpg' }),
-	              _react2.default.createElement(_Thumbnail2.default, { img: '2.jpg' }),
-	              _react2.default.createElement(_Thumbnail2.default, { img: '3.jpg' })
+	              _react2.default.createElement(_Thumbnail2.default, { img: '1.jpg', size: 'large' }),
+	              _react2.default.createElement(_Thumbnail2.default, { img: '2.jpg', size: 'small' }),
+	              _react2.default.createElement(_Thumbnail2.default, { img: '3.jpg', size: 'small' }),
+	              _react2.default.createElement(_Thumbnail2.default, { img: '4.jpg', size: 'medium' }),
+	              _react2.default.createElement(_Thumbnail2.default, { img: '3.jpg', size: 'medium' }),
+	              _react2.default.createElement(_Thumbnail2.default, { img: '4.jpg', size: 'medium' }),
+	              _react2.default.createElement(_Thumbnail2.default, { img: '2.jpg', size: 'large' }),
+	              _react2.default.createElement(_Thumbnail2.default, { img: '1.jpg', size: 'small' }),
+	              _react2.default.createElement(_Thumbnail2.default, { img: '2.jpg', size: 'medium' }),
+	              _react2.default.createElement(_Thumbnail2.default, { img: '4.jpg', size: 'small' }),
+	              _react2.default.createElement(_Thumbnail2.default, { img: '1.jpg', size: 'large' }),
+	              _react2.default.createElement(_Thumbnail2.default, { img: '3.jpg', size: 'medium' }),
+	              _react2.default.createElement(_Thumbnail2.default, { img: '4.jpg', size: 'small' }),
+	              _react2.default.createElement(_Thumbnail2.default, { img: '1.jpg', size: 'small' }),
+	              _react2.default.createElement(_Thumbnail2.default, { img: '3.jpg', size: 'medium' }),
+	              _react2.default.createElement(_Thumbnail2.default, { img: '2.jpg', size: 'medium' }),
+	              _react2.default.createElement(_Thumbnail2.default, { img: '1.jpg', size: 'large' }),
+	              _react2.default.createElement(_Thumbnail2.default, { img: '4.jpg', size: 'small' }),
+	              _react2.default.createElement(_Thumbnail2.default, { img: '2.jpg', size: 'medium' }),
+	              _react2.default.createElement(_Thumbnail2.default, { img: '3.jpg', size: 'small' })
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -14734,7 +14737,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"default":"components-layout-Thumbnail-default_uyX8t"};
+	module.exports = {"default":"components-layout-Thumbnail-default_uyX8t","small":"components-layout-Thumbnail-small_Fekrg","medium":"components-layout-Thumbnail-medium_3UWCq","large":"components-layout-Thumbnail-large_2rT7o"};
 
 /***/ },
 /* 151 */
